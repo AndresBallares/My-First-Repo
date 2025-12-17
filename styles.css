@@ -1,0 +1,168 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   Layout
+   ========================= */
+
+section.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* =========================
+   Headings
+   ========================= */
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   Value Bullets
+   ========================= */
+
+ul {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #b38b59;
+  font-weight: bold;
+}
+
+/* =========================
+   Form
+   ========================= */
+
+form {
+  max-width: 420px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #b38b59;
+}
+
+/* =========================
+   CTA Button
+   ========================= */
+
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Privacy Text
+   ========================= */
+
+.privacy {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 16px;
+}
+
+.privacy a {
+  color: #777;
+  text-decoration: underline;
+}
+
+.privacy a:hover {
+  color: #000;
+}
+
+/* =========================
+   Hero Image
+   ========================= */
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 900px) {
+  section.container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  ul li {
+    text-align: left;
+  }
+}
