@@ -3,15 +3,13 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
-yarn.lock
 
 # Python Virtual Environment
 venv/
 env/
 ENV/
 .venv/
-.env
+.env*
 *.pyc
 __pycache__/
 
@@ -38,8 +36,6 @@ Thumbs.db
 Desktop.ini
 
 # Sensitive Data
-.env.local
-.env.production
 *.pem
 *.key
 secrets/
